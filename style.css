@@ -1,0 +1,114 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f4e7;
+    color: #5a3e2a;
+    margin: 0;
+    padding: 10px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 90vw;
+    max-width: 80vmin;
+    margin: 0 auto;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 80vh;
+}
+
+h1 {
+    font-size: calc(1em + 1vmin);
+    color: #c78766;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: calc(0.9em + 0.5vmin);
+    margin-bottom: 20px;
+}
+
+.bingo-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vw;
+    margin: 20px auto;
+    max-width: 80vw;
+    aspect-ratio: 1/1;
+    align-self: center;
+}
+
+.bingo-card {
+    background-color: #fff8f0;
+    border-radius: 20px;
+    padding: 5vmin;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    aspect-ratio: 1/1; /* Ensure the card is square */
+}
+
+.dog-emoji {
+    font-size: calc(2em + 5vmin);
+    margin-bottom: 2vmin;
+}
+
+.dog-name {
+    font-size: calc(0.8em + 1vmin);
+    text-align: center;
+    word-break: break-word;
+}
+
+.bingo-card.struck-off {
+    background-color: #e6e6e6;
+    transform: scale(0.95);
+    opacity: 0.7;
+}
+
+#congratulations {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(248, 244, 231, 0.9);
+    padding: 5vmin;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+#congratulations h2 {
+    color: #c78766;
+    font-size: calc(1.5em + 2vmin);
+    margin-top: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.reset-button {
+    background-color: #c78766;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: calc(1em + 0.5vmin);
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: auto;
+    width: fit-content;
+    transition: background-color 0.3s ease;
+    align-self: center;
+}
+
+.reset-button:hover {
+    background-color: #a66d52;
+}
