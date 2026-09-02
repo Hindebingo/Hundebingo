@@ -2,17 +2,17 @@
 document.addEventListener('DOMContentLoaded', function() {
     // List of dog breeds in German with corresponding emojis
     const dogBreeds = [
-        { name: "Labrador", emoji: "🐶" },
-        { name: "Schäferhund", emoji: "🐺" },
+        { name: "Labrador", emoji: "🐕" },
+        { name: "Schäferhund", emoji: "🐕‍🦺" },
         { name: "Golden Retriever", emoji: "🐕" },
         { name: "Dackel", emoji: "🐾" },
-        { name: "Beagle", emoji: "🐶" },
+        { name: "Beagle", emoji: "🐕" },
         { name: "Pudel", emoji: "🐩" },
         { name: "Mops", emoji: "🐶" },
-        { name: "Corgie", emoji: "🐕" },
+        { name: "Corgi", emoji: "🐕" },
         { name: "Chihuahua", emoji: "🐶" },
-        { name: "Rottweiler", emoji: "🐾" },
-        { name: "Dalmatiner", emoji: "🐶" },
+        { name: "Rottweiler", emoji: "🐺" },
+        { name: "Dalmatiner", emoji: "🐕" },
         { name: "Bernersennenhund", emoji: "🐕" }
     ];
 

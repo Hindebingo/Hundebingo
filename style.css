@@ -36,11 +36,10 @@ p {
 .bingo-board {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1vw;
-    margin: 20px auto;
-    max-width: 80vw;
+    gap: 2vmin;
+    width: min(85vmin, calc(60dvh)); /* fits horizontally and vertically */
+    max-width: 90vw;
     aspect-ratio: 1/1;
-    align-self: center;
 }
 
 .bingo-card {
