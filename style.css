@@ -43,7 +43,7 @@ p {
 .bingo-card {
     background-color: #fff8f0;
     border-radius: 15px;
-    padding: 5px;
+    padding: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     display: flex;
@@ -51,27 +51,31 @@ p {
     justify-content: center;
     flex-direction: column;
     min-width: 0;
+    aspect-ratio: 1;
+    overflow: hidden;
 }
 
 .dog-emoji {
     font-size: 1.5em;
     margin-bottom: 3px;
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
 }
 
 .dog-emoji img {
     max-width: 100%;
     height: auto;
-    max-height: 40px;
+    max-height: 70%;
+    object-fit: contain;
 }
 
 .dog-name {
-    font-size: 0.7em;
+    font-size: 0.75em;
     text-align: center;
     word-break: break-word;
     margin-top: 3px;
     min-width: 0;
+    flex-shrink: 1;
 }
 
 .bingo-card.struck-off {
