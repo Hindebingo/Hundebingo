@@ -91,7 +91,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Event listener for reset button
-    document.getElementById('reset-button').addEventListener('click', createBingoBoard);
+    document.getElementById('reset-button').addEventListener('click', function() {
+        document.getElementById('congratulations').classList.add('hidden');
+        createBingoBoard();
+    });
 
     // Initialize the bingo board when the page loads
     createBingoBoard();
