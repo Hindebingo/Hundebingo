@@ -5,7 +5,7 @@ Ein einfaches, mobiles Bingo-Spiel mit Hunderassen. Perfekt für unterwegs oder 
 ## Demo
 
 Du kannst die App direkt in deinem Browser ausprobieren:
-[Live Demo](https://andi.github.io/02_Hundebingo/) *(Pfad anpassen)*
+[Live Demo](https://hindebingo.github.io/Hundebingo/)
 
 ## Funktionen
 
@@ -32,7 +32,7 @@ Einfach die `index.html` in einem Browser öffnen.
 ### Option 2: Lokale Entwicklung
 1. Repository klonen:
    ```bash
-   git clone https://github.com/andi/02_Hundebingo.git
+   git clone https://github.com/Hindebingo/Hundebingo
    cd 02_Hundebingo
    ```
 2. `index.html` im Browser öffnen oder einen lokalen Server starten:
