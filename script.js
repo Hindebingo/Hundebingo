@@ -1,5 +1,32 @@
 // script.js
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize darkmode from localStorage
+    const darkmodeCheckbox = document.getElementById('darkmode-checkbox');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const storedDarkmode = localStorage.getItem('darkmode');
+    
+    // Set initial state: stored preference, or system preference, default to light
+    if (storedDarkmode === 'true') {
+        document.body.classList.add('dark-mode');
+        darkmodeCheckbox.checked = true;
+    } else if (storedDarkmode === 'false') {
+        darkmodeCheckbox.checked = false;
+    } else if (prefersDark) {
+        document.body.classList.add('dark-mode');
+        darkmodeCheckbox.checked = true;
+    }
+    
+    // Toggle darkmode
+    darkmodeCheckbox.addEventListener('change', function() {
+        if (this.checked) {
+            document.body.classList.add('dark-mode');
+            localStorage.setItem('darkmode', 'true');
+        } else {
+            document.body.classList.remove('dark-mode');
+            localStorage.setItem('darkmode', 'false');
+        }
+    });
+
     // List of dog breeds in German with corresponding emojis
     const dogBreeds = [
         { name: "Labrador", emoji: "🐕" },
