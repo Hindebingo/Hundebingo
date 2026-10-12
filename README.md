@@ -1,11 +1,16 @@
 # Hunde Bingo
 
 Ein einfaches, mobiles Bingo-Spiel mit Hunderassen. Perfekt für unterwegs oder zum Zeitvertreib mit Freunden.
+Die Website wurde komplett mit KI erstellt (lokales Modell und Mistral Vibe)
 
 ## Demo
 
 Du kannst die App direkt in deinem Browser ausprobieren:
 [Live Demo](https://hindebingo.github.io/Hundebingo/)
+Die App unterstützt PWA (Progressive Web App). Du kannst sie:
+- Auf dem Handy zum Home-Bildschirm hinzufügen
+- Auf dem Desktop als App installieren (Browser-Funktion)
+
 
 ## Funktionen
 
@@ -16,36 +21,6 @@ Du kannst die App direkt in deinem Browser ausprobieren:
 - 📱 **Responsive Design** – Optimiert für Mobile und Desktop
 - 🔄 **Neues Spiel** – Button zum Zurücksetzen des Boards
 
-## Screenshots
-
-| Hellmodus | Darkmode |
-|-----------|----------|
-| ![Light Mode](screenshots/light.png) | ![Dark Mode](screenshots/dark.png) |
-
-*(Screenshots hochladen oder Pfade anpassen)*
-
-## Installation
-
-### Option 1: Direkt verwenden
-Einfach die `index.html` in einem Browser öffnen.
-
-### Option 2: Lokale Entwicklung
-1. Repository klonen:
-   ```bash
-   git clone https://github.com/Hindebingo/Hundebingo
-   cd 02_Hundebingo
-   ```
-2. `index.html` im Browser öffnen oder einen lokalen Server starten:
-   ```bash
-   # Mit Python 3
-   python -m http.server 8000
-   # Dann http://localhost:8000 öffnen
-   ```
-
-### Option 3: Als PWA installieren
-Die App unterstützt PWA (Progressive Web App). Du kannst sie:
-- Auf dem Handy zum Home-Bildschirm hinzufügen
-- Auf dem Desktop als App installieren (Browser-Funktion)
 
 ## Technologien
 
