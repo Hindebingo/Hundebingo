@@ -8,7 +8,8 @@
     --text-color: #5a3e2a;
     --card-bg: #fff8f0;
     --card-shadow: rgba(0, 0, 0, 0.1);
-    --struck-off-bg: #e6e6e6;
+    --struck-off-bg: #c78766;
+    --struck-off-border: #a66d52;
     --button-bg: #c78766;
     --button-hover: #a66d52;
     --accent-color: #c78766;
@@ -31,7 +32,8 @@ body.dark-mode {
     --text-color: #f8f4e7;
     --card-bg: #3a2e28;
     --card-shadow: rgba(0, 0, 0, 0.3);
-    --struck-off-bg: #4a3e38;
+    --struck-off-bg: #d4a58f;
+    --struck-off-border: #8b5a42;
     --button-bg: #8b5a42;
     --button-hover: #6b4430;
     --accent-color: #d4a58f;
@@ -106,8 +108,9 @@ p {
 
 .bingo-card.struck-off {
     background-color: var(--struck-off-bg);
+    border: 3px solid var(--struck-off-border);
     transform: scale(0.95);
-    opacity: 0.7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 #congratulations {
