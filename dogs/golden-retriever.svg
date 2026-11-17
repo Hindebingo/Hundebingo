@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128 128" width="128" height="128">
+  <title>Golden Retriever</title>
+  <defs><g id="sil"><path d="M27 42 C10 40 5 64 10 84 C14 96 28 94 32 82 C36 70 38 56 37 46Z" fill="#d28e3d"/><g transform="translate(128,0) scale(-1,1)"><path d="M27 42 C10 40 5 64 10 84 C14 96 28 94 32 82 C36 70 38 56 37 46Z" fill="#d28e3d"/></g><ellipse cx="64" cy="68" rx="48" ry="40" fill="#f2b862"/><circle cx="26" cy="94" r="10" fill="#f2b862"/><circle cx="102" cy="94" r="10" fill="#f2b862"/><path d="M50 30 C50 18 62 16 64 27 C66 16 78 18 78 30Z" fill="#f2b862"/></g></defs>
+  <use xlink:href="#sil" href="#sil" stroke="#fff6ea" stroke-width="10" stroke-linejoin="round"/>
+  <use xlink:href="#sil" href="#sil" stroke="#5a3a2e" stroke-width="4.5" stroke-linejoin="round"/>
+  <use xlink:href="#sil" href="#sil"/>
+  
+  <ellipse cx="64" cy="89" rx="22" ry="15.5" fill="#fde3ad"/>
+  
+  <ellipse cx="28" cy="87" rx="7.5" ry="4.6" fill="#ff8da1" opacity=".55"/><ellipse cx="100" cy="87" rx="7.5" ry="4.6" fill="#ff8da1" opacity=".55"/>
+  <path d="M35.5 75 q6.5 -11 13 0" fill="none" stroke="#2b1a14" stroke-width="3.2" stroke-linecap="round"/><path d="M79.5 75 q6.5 -11 13 0" fill="none" stroke="#2b1a14" stroke-width="3.2" stroke-linecap="round"/>
+  <ellipse cx="64" cy="79.5" rx="5" ry="3.6" fill="#2b1a14"/><ellipse cx="62.5" cy="78.3" rx="1.7" ry="1" fill="#fff" opacity=".5"/>
+  <path d="M64 83 v3" stroke="#2b1a14" stroke-width="1.8" stroke-linecap="round" fill="none"/><path d="M55.5 86 q8.5 4 17 0 q-1 11.5 -8.5 11.5 q-7.5 0 -8.5 -11.5Z" fill="#4a2020"/><ellipse cx="64" cy="94.3" rx="4.6" ry="3" fill="#ff8fa3"/>
+</svg>

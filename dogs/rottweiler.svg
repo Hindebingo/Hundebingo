@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128 128" width="128" height="128">
+  <title>Rottweiler</title>
+  <defs><g id="sil"><path d="M26 38 C12 38 8 56 14 70 C20 78 32 70 36 58 C38 48 36 40 26 38Z" fill="#2c221e"/><g transform="translate(128,0) scale(-1,1)"><path d="M26 38 C12 38 8 56 14 70 C20 78 32 70 36 58 C38 48 36 40 26 38Z" fill="#2c221e"/></g><ellipse cx="64" cy="68" rx="48" ry="40" fill="#4d3f39"/></g></defs>
+  <use xlink:href="#sil" href="#sil" stroke="#fff6ea" stroke-width="10" stroke-linejoin="round"/>
+  <use xlink:href="#sil" href="#sil" stroke="#5a3a2e" stroke-width="4.5" stroke-linejoin="round"/>
+  <use xlink:href="#sil" href="#sil"/>
+  
+  <ellipse cx="64" cy="89" rx="22" ry="15.5" fill="#dc9b56"/>
+  <ellipse cx="44" cy="57" rx="5" ry="3.2" fill="#d98a3f"/><ellipse cx="84" cy="57" rx="5" ry="3.2" fill="#d98a3f"/>
+  <ellipse cx="28" cy="87" rx="7.5" ry="4.6" fill="#ff8da1" opacity=".55"/><ellipse cx="100" cy="87" rx="7.5" ry="4.6" fill="#ff8da1" opacity=".55"/>
+  <ellipse cx="42" cy="72" rx="5.6" ry="6.6" fill="#120b09"/><circle cx="44.0" cy="69.5" r="2.4" fill="#fff"/><circle cx="39.9" cy="74.8" r="1.1" fill="#fff" opacity=".85"/><ellipse cx="86" cy="72" rx="5.6" ry="6.6" fill="#120b09"/><circle cx="88.0" cy="69.5" r="2.4" fill="#fff"/><circle cx="83.9" cy="74.8" r="1.1" fill="#fff" opacity=".85"/>
+  <ellipse cx="64" cy="79.5" rx="5" ry="3.6" fill="#2b1a14"/><ellipse cx="62.5" cy="78.3" rx="1.7" ry="1" fill="#fff" opacity=".5"/>
+  <path d="M64 83 v3" stroke="#2b1a14" stroke-width="1.8" stroke-linecap="round" fill="none"/><path d="M55.5 86 q8.5 4 17 0 q-1 11.5 -8.5 11.5 q-7.5 0 -8.5 -11.5Z" fill="#4a2020"/><ellipse cx="64" cy="94.3" rx="4.6" ry="3" fill="#ff8fa3"/>
+</svg>
