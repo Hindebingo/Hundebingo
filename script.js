@@ -27,20 +27,22 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // List of dog breeds in German with corresponding emojis
+    // List of dog breeds in German with corresponding emojis.
+    // Optional "image": SVG icon that replaces the emoji (emoji stays as fallback).
     const dogBreeds = [
-        { name: "Labrador", emoji: "🐕" },
-        { name: "Schäferhund", emoji: "🐕‍🦺" },
-        { name: "Golden Retriever", emoji: "🐕" },
-        { name: "Dackel", emoji: "🐾" },
-        { name: "Beagle", emoji: "🐕" },
-        { name: "Pudel", emoji: "🐩" },
-        { name: "Mops", emoji: "🐶" },
-        { name: "Corgi", emoji: "🐕" },
-        { name: "Chihuahua", emoji: "🐶" },
-        { name: "Rottweiler", emoji: "🐺" },
-        { name: "Dalmatiner", emoji: "🐕" },
-        { name: "Bernersennenhund", emoji: "🐕" }
+        { name: "Labrador", emoji: "🐕", image: "dogs/labrador.svg" },
+        { name: "Schäferhund", emoji: "🐕‍🦺", image: "dogs/schaeferhund.svg" },
+        { name: "Golden Retriever", emoji: "🐕", image: "dogs/golden-retriever.svg" },
+        { name: "Dackel", emoji: "🐾", image: "dogs/dackel.svg" },
+        { name: "Beagle", emoji: "🐕", image: "dogs/beagle.svg" },
+        { name: "Pudel", emoji: "🐩", image: "dogs/pudel.svg" },
+        { name: "Mops", emoji: "🐶", image: "dogs/mops.svg" },
+        { name: "Corgi", emoji: "🐕", image: "dogs/corgi.svg" },
+        { name: "Chihuahua", emoji: "🐶", image: "dogs/chihuahua.svg" },
+        { name: "Rottweiler", emoji: "🐺", image: "dogs/rottweiler.svg" },
+        { name: "Dalmatiner", emoji: "🐕", image: "dogs/dalmatiner.svg" },
+        { name: "Berner\u00ADsennenhund",  // \u00AD = weiche Trennung (Zeilenumbruch nach "Berner-")
+         emoji: "🐕", image: "dogs/bernersennenhund.svg" }
     ];
 
     // Create bingo board
@@ -55,9 +57,13 @@ document.addEventListener('DOMContentLoaded', function() {
         for (let i = 0; i < 9; i++) {
             const card = document.createElement('div');
             card.className = 'bingo-card';
+            const breed = shuffledBreeds[i];
+            const icon = breed.image
+                ? `<img src="${breed.image}" alt="${breed.name}" draggable="false">`
+                : breed.emoji;
             card.innerHTML = `
-                <span class="dog-emoji">${shuffledBreeds[i].emoji}</span>
-                <span class="dog-name">${shuffledBreeds[i].name}</span>
+                <span class="dog-emoji">${icon}</span>
+                <span class="dog-name">${breed.name}</span>
             `;
             card.addEventListener('click', function() {
                 this.classList.toggle('struck-off');

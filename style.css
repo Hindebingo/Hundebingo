@@ -70,7 +70,7 @@ p {
 .bingo-card {
     background-color: var(--card-bg);
     border-radius: 15px;
-    padding: 10px;
+    padding: 10px 6px;
     box-shadow: 0 2px 4px var(--card-shadow);
     transition: all 0.3s ease;
     display: flex;
@@ -91,14 +91,15 @@ p {
 }
 
 .dog-emoji img {
+    display: block;
+    width: 1.6em;
+    height: 1.6em;
     max-width: 100%;
-    height: auto;
-    max-height: 65%;
     object-fit: contain;
 }
 
 .dog-name {
-    font-size: 0.9em;
+    font-size: clamp(0.72em, 3.6vw, 0.9em);
     text-align: center;
     word-break: break-word;
     margin-top: 5px;
